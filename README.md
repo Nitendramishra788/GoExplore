@@ -77,8 +77,6 @@ GoExplore
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/GoExplore.git
-
 Navigate into the project folder:
 
 cd GoExplore
@@ -107,7 +105,7 @@ node app.js
 
 Then open your browser and visit:
 
-http://localhost:8080
+http://localhost:3000
 
 ---
 
@@ -123,7 +121,7 @@ http://localhost:8080
 
 👨‍💻 Author
 
-Developed by Nitin
+Developed by Nitendra Nit mishra
 
 ---
 
