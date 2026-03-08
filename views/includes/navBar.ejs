@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i>GoExplore</i></a>
+    <a class="navbar-brand" href="/location"><i class="fa-brands fa-wpexplorer"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link "  href="/location">Home</a>
+        <a class="nav-link" href="/location">All_List</a>
+        <% if(currentUser && currentUser.role === "author"){ %>
+
+        <a class="nav-link" href="/location/new">CreateList</a>
+
+        <% } %>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+         <a class="nav-link "  href="/location/new">
+          
+
+        <% if(!currentUser) { %>  
+   
+          <a class="nav-link "  href="/signup">
+          
+            <button class="btn btn-outline-primary px-4">SignUp</button>
+         
+        </a>
+
+        <a class="nav-link "  href="/signup/login">
+          
+            <button class="btn btn-outline-success px-4">Login</button>
+        
+        </a>
+
+       <% } %> 
+
+        <% if(currentUser) { %>
+
+           <a class="nav-link" href="/signup/logout">
+          <button class="btn btn-outline-danger px-4">Logout</button>
+        </a>
+
+        
+          <% } %>
+
+      
+       
+      
+      </div>
+       
+    </div>
+  </div>
+</nav>

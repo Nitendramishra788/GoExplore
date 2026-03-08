@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+
+.navbar{
+    height: 5rem;
+    background-color:white;
+}
+
+.fa-wpexplorer{
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+    font-weight: bolder !important;
+}
+
+
+/* .backGround{
+    height: 38rem;
+    width: 82rem;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+} */
+
+
+
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    /* position: absolute;
+    bottom: 0px; */
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.f-info-links a{
+     text-decoration: none;
+     margin-right: 10px;
+
+}
+
+.f-info-links a:hover{
+    text-decoration:underline;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    opacity:0.9;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    opacity:1;
+    
+}
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title a{
+  text-decoration:none;
+  color: black;
+}

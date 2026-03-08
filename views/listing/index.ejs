@@ -1,0 +1,61 @@
+
+<% layout('/layouts/boilerplate') %>
+
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+    <% for (let index of allData) { %>
+
+      <div class="col-md-4">
+        <div class="card h-100" style="width: 100%;">
+          
+          <a href="/location/<%= index._id %>">
+            <img 
+              src="<%= index.image.url %>" 
+              class="card-img-top" 
+              alt="<%= index.title%>"
+            >
+          </a>
+
+          <div class="card-body">
+            <h5 class="card-title"> <a href="/location/<%= index._id %>"><%= index.title %></a> </h5>
+            <p class="card-text">
+             &#8377;<%= index.price %>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    <% } %>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <% layout('/layouts/boilerplate') %>
+<body>
+   
+
+
+   <%   for(index of allData){%>
+        <ul>
+            <li><a href="/location/<%= index._id %>"><%= index.title %></a></li>
+
+            <div class="card" style="width: 18rem;">
+  <img src="<%= index.image.url %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+            
+        </ul>
+  <% } %>  
+</body>
+</html> -->
