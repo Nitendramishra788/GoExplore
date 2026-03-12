@@ -39,6 +39,16 @@ footer {
     font-weight: bolder !important;
 }
 
+/* Fix Nav baar slide on phone device */
+
+@media(max-width:768px){
+    .navbar-collapse{
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
+
 
 /* .backGround{
     height: 38rem;
